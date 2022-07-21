@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.yangsx95</groupId>
+    <artifactId>online-taxi</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>online-taxi</name>
+    <description>网约车</description>
+    
+    <developers>
+        <developer>
+            <name>杨顺翔</name>
+            <email>616510229@qq.com</email>
+        </developer>
+    </developers>
+    
+    <modules>
+        <module>passenger</module>
+        <module>online-taxi-parent</module>
+        <module>boss</module>
+        <module>driver</module>
+    </modules>
+    
+</project>
