@@ -19,6 +19,7 @@
         <springboot.version>2.3.12.RELEASE</springboot.version>
         <springcloud.alibaba.version>2.2.8.RELEASE</springcloud.alibaba.version>
         <nacos.version>2.2.8.RELEASE</nacos.version>
+        <lombok.version>1.18.24</lombok.version>
     </properties>
 
     <dependencyManagement>
@@ -36,6 +37,12 @@
                 <version>${springcloud.alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

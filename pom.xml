@@ -24,6 +24,7 @@
         <module>online-taxi-parent</module>
         <module>boss</module>
         <module>driver</module>
+        <module>internal-common</module>
     </modules>
     
 </project>
