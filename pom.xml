@@ -24,6 +24,10 @@
         <module>infrastructure</module>
         <module>common-server</module>
         <module>business-server</module>
+        <module>common-server/verification-code/verification-code-parent</module>
+        <module>common-server/verification-code/verification-code-api</module>
+        <module>common-server/verification-code/verification-code-controller</module>
+        <module>common-server/verification-code/verification-code-starter</module>
     </modules>
     
 </project>

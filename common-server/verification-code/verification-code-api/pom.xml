@@ -3,19 +3,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>bussiness-server</artifactId>
+        <artifactId>verification-code-parent</artifactId>
         <groupId>com.yangsx95</groupId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../verification-code-parent</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>verification-code-api</artifactId>
     
-    <packaging>pom</packaging>
-
-    <artifactId>bussiness-server</artifactId>
-
-    <modules>
-        <module>boss</module>
-        <module>driver</module>
-        <module>passenger</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+    </dependencies>
 </project>
