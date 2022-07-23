@@ -12,7 +12,6 @@
 
     <modules>
         <module>passenger-parent</module>
-        <module>passenger-common</module>
         <module>passenger-api</module>
         <module>passenger-dao</module>
         <module>passenger-service</module>

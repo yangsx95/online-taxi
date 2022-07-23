@@ -14,8 +14,16 @@
     
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>com.yangsx95</groupId>
+            <artifactId>passenger-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.yangsx95</groupId>
+            <artifactId>passenger-service</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.yangsx95</groupId>
+            <artifactId>passenger-dao</artifactId>
         </dependency>
     </dependencies>
 </project>
