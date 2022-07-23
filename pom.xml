@@ -20,11 +20,10 @@
     </developers>
     
     <modules>
-        <module>passenger</module>
         <module>online-taxi-parent</module>
-        <module>boss</module>
-        <module>driver</module>
-        <module>internal-common</module>
+        <module>infrastructure</module>
+        <module>common-server</module>
+        <module>business-server</module>
     </modules>
     
 </project>
