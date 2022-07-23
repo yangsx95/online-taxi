@@ -4,17 +4,59 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.yangsx95</groupId>
+    <parent>
+        <artifactId>bussiness-server</artifactId>
+        <groupId>com.yangsx95</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <artifactId>passenger</artifactId>
-    <version>1.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
     <modules>
-        <module>passenger-parent</module>
         <module>passenger-api</module>
         <module>passenger-dao</module>
         <module>passenger-service</module>
         <module>passenger-starter</module>
     </modules>
+
+    <properties>
+        <passenger.version>1.0-SNAPSHOT</passenger.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.yangsx95</groupId>
+                <artifactId>passenger-api</artifactId>
+                <version>${passenger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yangsx95</groupId>
+                <artifactId>passenger-service</artifactId>
+                <version>${passenger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yangsx95</groupId>
+                <artifactId>passenger-dao</artifactId>
+                <version>${passenger.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+    </dependencies>
 </project>
