@@ -12,3 +12,8 @@ services:
     ports:
       - "8848:8848"
       - "9848:9848"
+  redis-server:
+    image: redis:${REDIS_VERSION}
+    container_name: redis-server
+    ports:
+      - "6379:6379"

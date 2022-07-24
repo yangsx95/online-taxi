@@ -15,8 +15,9 @@
 
     <properties>
         <verification.code.version>1.0-SNAPSHOT</verification.code.version>
+        <common.tool.version>1.0-SNAPSHOT</common.tool.version>
     </properties>
-    
+
     <modules>
         <module>verification-code-api</module>
         <module>verification-code-controller</module>
@@ -35,21 +36,12 @@
                 <artifactId>verification-code-controller</artifactId>
                 <version>${verification.code.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.yangsx95</groupId>
+                <artifactId>common-tool</artifactId>
+                <version>${common.tool.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-        </dependency>
-    </dependencies>
 </project>
