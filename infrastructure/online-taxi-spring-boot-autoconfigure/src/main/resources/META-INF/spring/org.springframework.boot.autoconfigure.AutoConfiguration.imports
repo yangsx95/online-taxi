@@ -1,1 +1,2 @@
 com.yangsx95.onlinetaxi.autoconfigure.web.WebAutoConfiguration
+com.yangsx95.onlinetaxi.autoconfigure.feign.FeignAutoConfiguration
