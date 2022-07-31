@@ -1,7 +1,7 @@
-package com.yangsx95.onlinetaxi.common.result;
+package com.yangsx95.onlinetaxi.autoconfigure.web.result;
 
-import com.yangsx95.onlinetaxi.common.enums.ResultStatusEnum;
-import com.yangsx95.onlinetaxi.common.enums.ResultStatus;
+import com.yangsx95.onlinetaxi.autoconfigure.enums.ResultStatus;
+import com.yangsx95.onlinetaxi.autoconfigure.enums.ResultStatusEnum;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -84,5 +84,4 @@ public class Result<T> {
     public static Result<Void> fail(ResultStatus resultStatus) {
         return build(resultStatus, null);
     }
-
 }

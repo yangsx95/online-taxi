@@ -14,6 +14,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>common-tool</module>
+        <module>online-taxi-spring-boot-autoconfigure</module>
     </modules>
 </project>

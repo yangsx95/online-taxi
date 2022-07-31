@@ -1,6 +1,5 @@
 package com.yangsx95.onlinetaxi.verificationcode.api;
 
-import com.yangsx95.onlinetaxi.common.result.Result;
 import com.yangsx95.onlinetaxi.verificationcode.api.rsp.NumberCodeRsp;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +21,6 @@ public interface VerificationCodeApi {
      * @return 数字验证码
      */
     @GetMapping(path = "/numberCode/{size}")
-    Result<NumberCodeRsp> getNumberCode(@PathVariable Integer size);
+    NumberCodeRsp getNumberCode(@PathVariable Integer size);
 
 }

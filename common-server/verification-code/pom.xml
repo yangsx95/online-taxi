@@ -15,7 +15,7 @@
 
     <properties>
         <verification.code.version>1.0-SNAPSHOT</verification.code.version>
-        <common.tool.version>1.0-SNAPSHOT</common.tool.version>
+        <onlinetaxi.autoconfig.version>1.0-SNAPSHOT</onlinetaxi.autoconfig.version>
     </properties>
 
     <modules>
@@ -36,11 +36,10 @@
                 <artifactId>verification-code-controller</artifactId>
                 <version>${verification.code.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>com.yangsx95</groupId>
-                <artifactId>common-tool</artifactId>
-                <version>${common.tool.version}</version>
+                <artifactId>online-taxi-spring-boot-autoconfigure</artifactId>
+                <version>${onlinetaxi.autoconfig.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

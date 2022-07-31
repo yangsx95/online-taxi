@@ -36,7 +36,7 @@
         <springcloud.version>2021.0.1</springcloud.version>
         <springcloud.alibaba.version>2021.0.1.0</springcloud.alibaba.version>
         <nacos.version>2.2.8.RELEASE</nacos.version>
-        <lombok.version>1.18.24</lombok.version>
+        <lombok.version>1.18.22</lombok.version>
     </properties>
 
     <dependencyManagement>

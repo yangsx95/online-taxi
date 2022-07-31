@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>com.yangsx95</groupId>
-            <artifactId>passenger-api</artifactId>
+            <artifactId>passenger-controller</artifactId>
         </dependency>
         <dependency>
             <groupId>com.yangsx95</groupId>
@@ -23,6 +23,15 @@
         <dependency>
             <groupId>com.yangsx95</groupId>
             <artifactId>passenger-dao</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
     </dependencies>
 </project>
