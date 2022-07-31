@@ -9,7 +9,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
  * @author 杨顺翔
  * @since 2022/07/23
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.yangsx95")
 @RefreshScope
 @EnableDiscoveryClient
 public class VerificationCodeApplication {
