@@ -3,6 +3,7 @@ description '''
 '''
 
 dependencies {
+    compileOnly 'javax.servlet:javax.servlet-api'
     compileOnly 'org.springframework:spring-webmvc'
     compileOnly 'org.springframework.cloud:spring-cloud-starter-openfeign'
     compileOnly 'org.springframework.boot:spring-boot-autoconfigure'

@@ -6,8 +6,8 @@ import feign.RequestTemplate;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.context.annotation.Configuration;
 
-import static com.yangsx95.onlinetaxi.jupiter.contstants.HttpHeader.SERVICE_TYPE;
-import static com.yangsx95.onlinetaxi.jupiter.contstants.HttpHeader.SERVICE_TYPE_INNER_SERVICE;
+import static com.yangsx95.onlinetaxi.jupiter.contstants.InnerHttpHeader.SERVICE_TYPE;
+import static com.yangsx95.onlinetaxi.jupiter.contstants.InnerHttpHeader.SERVICE_TYPE_INNER_SERVICE;
 
 /**
  * @author 杨顺翔

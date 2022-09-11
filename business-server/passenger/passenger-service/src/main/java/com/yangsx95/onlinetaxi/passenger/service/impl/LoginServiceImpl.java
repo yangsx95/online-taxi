@@ -1,5 +1,6 @@
 package com.yangsx95.onlinetaxi.passenger.service.impl;
 
+import com.yangsx95.onlinetaxi.jupiter.enums.ResultStatusEnum;
 import com.yangsx95.onlinetaxi.jupiter.exception.BizException;
 import com.yangsx95.onlinetaxi.passenger.service.LoginService;
 import com.yangsx95.onlinetaxi.verificationcode.api.VerificationCodeApi;
@@ -21,7 +22,12 @@ public class LoginServiceImpl implements LoginService {
 
     @Override
     public String getVerificationCode() {
-        String result = Optional.ofNullable(verificationCodeApi.getNumberCode(6)).map(NumberCodeRsp::getNumberCode).orElseThrow(() -> new BizException());
+        String result = Optional.ofNullable(verificationCodeApi.getNumberCode(6))
+                .map(NumberCodeRsp::getNumberCode)
+                .orElseThrow(() -> new BizException(ResultStatusEnum.BIZ_ERROR));
+        if (result != null) {
+            throw new BizException(ResultStatusEnum.BIZ_ERROR);
+        }
         return result;
     }
 

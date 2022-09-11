@@ -29,7 +29,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = BizException.class)
     public Result<Void> bizExceptionHandler(HttpServletRequest req, BizException e) {
         log.error("系统发生业务异常：{}", e.getErrorMsg());
-        return Result.build(e.getErrorCode(), e.getErrorCode());
+        return Result.build(e.getErrorCode(), e.getErrorMsg());
     }
 
 

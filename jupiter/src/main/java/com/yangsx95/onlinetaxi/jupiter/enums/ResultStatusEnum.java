@@ -14,14 +14,19 @@ import lombok.Getter;
 public enum ResultStatusEnum implements ResultStatus {
 
     /**
-     * 通用成功响应
+     * 成功状态
      */
     SUCCESS(1, "请求成功"),
 
     /**
-     * 通用失败响应
+     * 系统未知错误
      */
-    INNER_ERROR(-1, "服务器内部异常，请联系管理员"),
+    UNKNOWN_ERROR(-1, "未知异常"),
+
+    /**
+     * 业务通用异常
+     */
+    BIZ_ERROR(-10, "处理失败"),
 
     ;
 

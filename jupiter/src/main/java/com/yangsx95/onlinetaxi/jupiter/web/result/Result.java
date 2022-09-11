@@ -3,7 +3,9 @@ package com.yangsx95.onlinetaxi.jupiter.web.result;
 import com.yangsx95.onlinetaxi.jupiter.enums.ResultStatus;
 import com.yangsx95.onlinetaxi.jupiter.enums.ResultStatusEnum;
 import lombok.Data;
+import lombok.ToString;
 import lombok.experimental.Accessors;
+import org.springframework.lang.NonNull;
 
 /**
  * 通用响应对象
@@ -44,6 +46,17 @@ public class Result<T> {
     }
 
     /**
+     * 构建一个没有data的响应
+     *
+     * @param code    状态码
+     * @param message 描述
+     * @return result对象
+     */
+    public static Result<Void> build(int code, String message) {
+        return build(code, message, null);
+    }
+
+    /**
      * 从 ResultStatus 接口构造响应结果对象
      *
      * @param resultStatus 响应状态对象
@@ -51,8 +64,18 @@ public class Result<T> {
      * @param <T>          数据对象类型
      * @return 结果对象
      */
-    public static <T> Result<T> build(ResultStatus resultStatus, T data) {
-        return new Result<T>().setCode(resultStatus.getCode()).setMessage(resultStatus.getMessage()).setData(data);
+    public static <T> Result<T> build(@NonNull ResultStatus resultStatus, T data) {
+        return build(resultStatus.getCode(), resultStatus.getMessage(), data);
+    }
+
+    /**
+     * 从 ResultStatus 接口构造没有data的响应结果对象
+     *
+     * @param resultStatus 响应状态对象
+     * @return 结果对象
+     */
+    public static Result<Void> build(@NonNull ResultStatus resultStatus) {
+        return build(resultStatus, null);
     }
 
     /**
@@ -78,7 +101,7 @@ public class Result<T> {
 
     /**
      * 构建失败结果对象
-     * 
+     *
      * @return 失败结果对象
      */
     public static Result<Void> fail(ResultStatus resultStatus) {
