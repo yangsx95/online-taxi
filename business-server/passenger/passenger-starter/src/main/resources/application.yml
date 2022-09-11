@@ -14,3 +14,6 @@ spring:
 # prefix 为 spring.application.name
 # file-extension 为文件后缀
 # 使用命令发布配置  curl -X POST "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=passenger-dev.yml&group=DEFAULT_GROUP&content=xxxxx配置文件内容"
+server:
+  port: 8091
+  

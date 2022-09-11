@@ -1,0 +1,8 @@
+description '''
+乘客端服务
+'''
+dependencies {
+    implementation project(':jupiter')
+    api project(':common-server:verification-code:verification-code-api')
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+}
