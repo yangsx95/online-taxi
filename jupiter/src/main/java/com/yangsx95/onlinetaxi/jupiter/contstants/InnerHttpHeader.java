@@ -4,7 +4,7 @@ package com.yangsx95.onlinetaxi.jupiter.contstants;
  * @author 杨顺翔
  * @since 2022/07/31
  */
-public interface HttpHeader {
+public interface InnerHttpHeader {
 
     String SERVICE_TYPE = "S-X-Service-Type";
 

@@ -15,8 +15,8 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 import java.util.Objects;
 import java.util.Optional;
 
-import static com.yangsx95.onlinetaxi.jupiter.contstants.HttpHeader.SERVICE_TYPE;
-import static com.yangsx95.onlinetaxi.jupiter.contstants.HttpHeader.SERVICE_TYPE_INNER_SERVICE;
+import static com.yangsx95.onlinetaxi.jupiter.contstants.InnerHttpHeader.SERVICE_TYPE;
+import static com.yangsx95.onlinetaxi.jupiter.contstants.InnerHttpHeader.SERVICE_TYPE_INNER_SERVICE;
 
 /**
  * 该响应体处理将会给所有的controller接口返回包装一层Result返回
