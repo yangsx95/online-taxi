@@ -1,0 +1,19 @@
+// 依赖版本管理
+ext {
+    jdkVersion = 17
+    projectVersion = '1.0.0-SNAPSHOT'
+
+    version = [
+            "springBoot"  : "2.6.3",
+            "springCloud" : "2021.0.1",
+            "springCloudAlibaba" : "2021.0.1.0",
+            "junitJupiter": "5.8.1",
+            "lombok"      : "1.18.22",
+    ]
+
+    dependencies = [
+            "junitJupiterApi"   : "org.junit.jupiter:junit-jupiter-api:${version.junitJupiter}",
+            "junitJupiterEngine": "org.junit.jupiter:junit-jupiter-engine:${version.junitJupiter}",
+            "lombok"            : "org.projectlombok:lombok:${version.lombok}",
+    ]
+}

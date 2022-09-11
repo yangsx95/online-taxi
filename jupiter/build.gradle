@@ -1,0 +1,10 @@
+description '''
+项目公用功能的Spring Boot Starter包封装
+'''
+
+dependencies {
+    compileOnly 'org.springframework:spring-webmvc'
+    compileOnly 'org.springframework.cloud:spring-cloud-starter-openfeign'
+    compileOnly 'org.springframework.boot:spring-boot-autoconfigure'
+    compileOnly 'org.springframework.boot:spring-boot-configuration-processor'
+}

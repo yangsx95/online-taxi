@@ -1,0 +1,21 @@
+rootProject.name = 'online-taxi'
+
+includePath 'jupiter'
+
+includePath 'common-server'
+includePath 'common-server:verification-code'
+includePath 'common-server:verification-code:verification-code-api'
+includePath 'common-server:verification-code:verification-code-starter'
+
+includePath 'business-server'
+includePath 'business-server:passenger'
+includePath 'business-server:passenger:passenger-dao'
+includePath 'business-server:passenger:passenger-service'
+includePath 'business-server:passenger:passenger-starter'
+includePath 'business-server:boss'
+includePath 'business-server:driver'
+
+void includePath(path) {
+    include path
+    findProject(path)?.name = path.substring(path.lastIndexOf(':') >= 0 ? path.lastIndexOf(':') : 0)
+}
